@@ -1,0 +1,18 @@
+#footer {
+  padding: 1rem;
+  background-color: var(--theme-color);
+}
+
+#footer-links {
+  text-align: center;
+  list-style: none;
+}
+
+#footer-links > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer-links > li > a:hover {
+  text-decoration: underline;
+}
