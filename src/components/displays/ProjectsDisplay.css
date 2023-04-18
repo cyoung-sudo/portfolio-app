@@ -1,0 +1,45 @@
+#projectsDisplay-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#projectsDisplay-list > li {
+  margin: 1rem;
+}
+
+.projectsDisplay-image > img {
+  height: 250px;
+  width: 100%;
+}
+
+.projectsDisplay-content {
+  padding: 1rem;
+  background-color: var(--light-color);
+  text-align: center;
+}
+
+.projectsDisplay-content > div:not(:last-child) {
+  margin-bottom: 0.3rem;
+}
+
+.projectsDisplay-name {
+  font-size: 1.2rem;
+}
+
+/* ----- Breakpoints ----- */
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+  #projectsDisplay-list > li {
+    width: 40%;
+  }
+}
+ 
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+  #projectsDisplay-list > li {
+    width: 30%;
+  }
+}
+/* ----- /Breakpoints ----- */
