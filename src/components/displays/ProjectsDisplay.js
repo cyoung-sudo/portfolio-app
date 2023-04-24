@@ -1,4 +1,6 @@
 import "./ProjectsDisplay.css";
+// Routing
+import { Link } from "react-router-dom";
 
 export default function ProjectsDisplay({ projects }) {
   return (
@@ -15,7 +17,7 @@ export default function ProjectsDisplay({ projects }) {
                 <div className="projectsDisplay-name">{ project.name }</div>
                 <div className="projectsDisplay-about">{ project.about }</div>
                 <div className="projectsDisplay-actions">
-                  <button>View</button>
+                  <Link to={`/projects/${idx}`}>View</Link>
                 </div>
               </div>
             </li>
