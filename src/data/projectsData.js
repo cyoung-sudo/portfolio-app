@@ -18,7 +18,8 @@ const projects = [
     repos: {
       client: "https://github.com/cyoung-sudo/image-search-app-client",
       server: "https://github.com/cyoung-sudo/image-search-app-server"
-    }
+    },
+    deployed: false
   },
 
   {
@@ -42,7 +43,8 @@ const projects = [
     repos: {
       client: "https://github.com/cyoung-sudo/voting-app-client",
       server: "https://github.com/cyoung-sudo/voting-app-server"
-    }
+    },
+    deployed: false
   },
 
   {
@@ -66,7 +68,8 @@ const projects = [
     repos: {
       client: "https://github.com/cyoung-sudo/nightlife-coordination-app-client",
       server: "https://github.com/cyoung-sudo/nightlife-coordination-app-server"
-    }
+    },
+    deployed: false
   },
 
   {
@@ -89,7 +92,8 @@ const projects = [
     repos: {
       client: "https://github.com/cyoung-sudo/stock-market-app-client",
       server: "https://github.com/cyoung-sudo/stock-market-app-server"
-    }
+    },
+    deployed: false
   },
 
   {
@@ -113,7 +117,8 @@ const projects = [
     repos: {
       client: "https://github.com/cyoung-sudo/book-trading-app-client",
       server: "https://github.com/cyoung-sudo/book-trading-app-server"
-    }
+    },
+    deployed: false
   },
 
   {
@@ -136,7 +141,33 @@ const projects = [
     repos: {
       client: "https://github.com/cyoung-sudo/pinterest-clone-app-client",
       server: "https://github.com/cyoung-sudo/pinterest-clone-app-server"
-    }
+    },
+    deployed: false
+  },
+
+  {
+    name: "Blog App",
+    about: "An app that allows the user to create and share posts with other users",
+    website: "http://34.227.172.138/",
+    images: [
+      "https://raw.githubusercontent.com/cyoung-sudo/blog-app-client/main/public/screenshot1.png",
+      "https://raw.githubusercontent.com/cyoung-sudo/blog-app-client/main/public/screenshot2.png",
+      "https://raw.githubusercontent.com/cyoung-sudo/blog-app-client/main/public/screenshot3.png"
+    ],
+    tech: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "React",
+      "Node",
+      "Express",
+      "MongoDB Atlas"
+    ],
+    repos: {
+      client: "https://github.com/cyoung-sudo/blog-app-client",
+      server: "https://github.com/cyoung-sudo/blog-app-server"
+    },
+    deployed: true
   }
 ];
 

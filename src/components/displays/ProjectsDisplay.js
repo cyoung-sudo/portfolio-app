@@ -15,6 +15,19 @@ export default function ProjectsDisplay({ projects }) {
 
               <div className="projectsDisplay-content">
                 <div className="projectsDisplay-name">{ project.name }</div>
+                <div className="projectsDisplay-deployment">
+                  {project.deployed &&
+                    <span className="projectsDisplay-deployment-true">
+                      Deployed
+                    </span>
+                  }
+
+                  {!project.deployed &&
+                    <span className="projectsDisplay-deployment-false">
+                      Not Deployed
+                    </span>
+                  }
+                </div>
                 <div className="projectsDisplay-about">{ project.about }</div>
                 <div className="projectsDisplay-actions">
                   <Link to={`/projects/${idx}`}>View</Link>

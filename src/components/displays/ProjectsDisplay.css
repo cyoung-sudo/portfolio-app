@@ -7,6 +7,8 @@
 
 #projectsDisplay-list > li {
   margin: 1rem;
+  padding: 0.3rem;
+  background-color: var(--light-color);
 }
 
 .projectsDisplay-image > img {
@@ -16,16 +18,48 @@
 
 .projectsDisplay-content {
   padding: 1rem;
-  background-color: var(--light-color);
   text-align: center;
 }
 
 .projectsDisplay-content > div:not(:last-child) {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .projectsDisplay-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.projectsDisplay-deployment-true {
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--light-success-color);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.projectsDisplay-deployment-false {
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--light-error-color);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.projectsDisplay-about {
   font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.projectsDisplay-actions > a {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--theme-color);
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 /* ----- Breakpoints ----- */
