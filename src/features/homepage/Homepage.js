@@ -1,6 +1,9 @@
 import "./Homepage.css";
 // Routing
 import { Link } from "react-router-dom";
+// Icons
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { GrMail } from "react-icons/gr";
 
 export default function Homepage(props) {
   return (
@@ -12,17 +15,17 @@ export default function Homepage(props) {
           </div>
 
           <ul id="homepage-profile-info">
-            <li>Christopher Young</li>
-            <li>College: ...</li>
-            <li>Degree: ...</li>
+            <li class="homepage-profile-name">Christopher Young</li>
+            <li class="homepage-profile-degree">Computer Science, B.S.</li>
+            <li class="homepage-profile-education">University of California, Santa Cruz</li>
           </ul>
         </div>
 
         <div id="homepage-projects">
           <h1>Projects</h1>
 
-          <div>
-
+          <div class="homepage-profiles-desc">
+            A collection of fullstack applications I've completed
           </div>
 
           <Link to="/projects">View Projects</Link>
@@ -31,9 +34,9 @@ export default function Homepage(props) {
         <div id="homepage-contact">
           <h1>Contact</h1>
           <ul>
-            <li>Email: ...</li>
-            <li>LinkedIn: ...</li>
-            <li>Github: ...</li>
+            <li><span><GrMail size={ 30 }/></span>Email</li>
+            <li><span><BsLinkedin size={ 30 }/></span>LinkedIn</li>
+            <li><span><BsGithub size={ 30 }/></span>Github</li>
           </ul>
         </div>
       </div>
