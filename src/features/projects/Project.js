@@ -14,8 +14,8 @@ export default function Project(props) {
   // Hooks
   const { id } = useParams();
 
+  //----- Format project images on load
   useEffect(() => {
-    // Format project images
     let formattedImages = projects[id].images.map(url => {
       return {
         original: url
@@ -30,6 +30,19 @@ export default function Project(props) {
       <div id="project">
         <div id="project-header">
           <h1>{ projects[id].name }</h1>
+          <div className="project-header-deployment">
+            {projects[id].deployed &&
+              <span className="project-header-deployment-true">
+                Deployed
+              </span>
+            }
+
+            {!projects[id].deployed &&
+              <span className="project-header-deployment-false">
+                Not Deployed
+              </span>
+            }
+          </div>
         </div>
   
         <div id="project-images-wrapper">
@@ -37,6 +50,39 @@ export default function Project(props) {
             items={ projectImages }
             showFullscreenButton={ false }
             showPlayButton={ false }/>
+        </div>
+
+        <div id="project-info">
+          <div>
+            <span className="project-info-label">Description: </span>
+            { projects[id].about }
+          </div>
+          {projects[id].website !== "" &&
+            <div>
+              <span className="project-info-label">Website: </span>
+              <a href={projects[id].website} target="_blank" rel="noreferrer">{ projects[id].website }</a>
+            </div>
+          }
+          <div className="project-info-tech">
+            <ul>
+              <span className="project-info-label">Tech: </span>
+              {projects[id].tech.map((tech, idx) => (
+                <li key={ idx }>
+                  { tech }
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <span className="project-info-label">Client Repo: </span>
+            <a href={projects[id].repos.client} target="_blank" rel="noreferrer">{ projects[id].repos.client }</a>
+          </div>
+
+          <div>
+            <span className="project-info-label">Server Repo: </span>
+            <a href={projects[id].repos.server} target="_blank" rel="noreferrer">{ projects[id].repos.server }</a>
+          </div>
         </div>
       </div>
     );

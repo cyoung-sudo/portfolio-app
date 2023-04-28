@@ -7,13 +7,64 @@
   padding: 1rem 0 2rem 0;
 }
 
+#project > div:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
 #project-header {
-  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#project-header > h1 {
+  margin-bottom: 0.5rem;
+}
+
+.project-header-deployment-true {
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--light-success-color);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.project-header-deployment-false {
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--light-error-color);
+  font-weight: 300;
+  font-size: 0.9rem;
 }
 
 #project-images-wrapper {
   width: 100%;
   border: 1px solid gray;
+}
+
+#project-info {
+  padding: 0 1rem;
+}
+
+#project-info > div {
+  margin-bottom: 0.5rem;
+}
+
+.project-info-label {
+  font-weight: bold;
+}
+
+.project-info-tech > ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.project-info-tech > ul  > li {
+  margin: 0 0 0.3rem 0.3rem;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  background-color: var(--light-color);
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 
 /* ----- Breakpoints ----- */
