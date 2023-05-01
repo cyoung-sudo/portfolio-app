@@ -46,6 +46,13 @@
   font-size: 0.9rem;
 }
 
+.projectsDisplay-deployment-true > span,
+.projectsDisplay-deployment-false > span {
+  position: relative;
+  top: 3px;
+  left: 2px;
+}
+
 .projectsDisplay-about {
   font-size: 1.2rem;
   font-weight: 300;

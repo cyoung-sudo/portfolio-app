@@ -35,6 +35,13 @@
   font-size: 0.9rem;
 }
 
+.project-header-deployment-true > span,
+.project-header-deployment-false > span {
+  position: relative;
+  top: 3px;
+  left: 2px;
+}
+
 #project-images-wrapper {
   width: 100%;
   border: 1px solid gray;

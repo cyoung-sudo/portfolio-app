@@ -7,6 +7,8 @@ import { useParams } from "react-router-dom";
 import { projects } from "../../data/projectsData";
 // Image gallery
 import ImageGallery from "react-image-gallery";
+// Icons
+import { AiFillCheckCircle, AiFillCloseCircle } from "react-icons/ai";
 
 export default function Project(props) {
   // Formatted data
@@ -33,13 +35,13 @@ export default function Project(props) {
           <div className="project-header-deployment">
             {projects[id].deployed &&
               <span className="project-header-deployment-true">
-                Deployed
+                Deployed<span><AiFillCheckCircle/></span>
               </span>
             }
 
             {!projects[id].deployed &&
               <span className="project-header-deployment-false">
-                Not Deployed
+                Not Deployed<span><AiFillCloseCircle/></span>
               </span>
             }
           </div>

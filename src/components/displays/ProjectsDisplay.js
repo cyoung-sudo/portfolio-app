@@ -1,6 +1,8 @@
 import "./ProjectsDisplay.css";
 // Routing
 import { Link } from "react-router-dom";
+// Icons
+import { AiFillCheckCircle, AiFillCloseCircle } from "react-icons/ai";
 
 export default function ProjectsDisplay({ projects }) {
   return (
@@ -18,13 +20,13 @@ export default function ProjectsDisplay({ projects }) {
                 <div className="projectsDisplay-deployment">
                   {project.deployed &&
                     <span className="projectsDisplay-deployment-true">
-                      Deployed
+                      Deployed<span><AiFillCheckCircle/></span>
                     </span>
                   }
 
                   {!project.deployed &&
                     <span className="projectsDisplay-deployment-false">
-                      Not Deployed
+                      Not Deployed<span><AiFillCloseCircle/></span>
                     </span>
                   }
                 </div>
