@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import routesConfig from "./routing/routesConfig";
 
 // Create router
-const router = createBrowserRouter(routesConfig);
+const router = createBrowserRouter(routesConfig, { basename: "/portfolio-app" });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

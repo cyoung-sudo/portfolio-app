@@ -8,12 +8,12 @@ import NotFound from "../components/static/NotFound";
 
 const routesConfig = [
   {
-    path: "/", 
+    path: "", 
     element: <App/>,
     errorElement: <NotFound/>,
     children:[
       {
-        path: "/",
+        path: "",
         element: <Homepage/>
       },
       {
